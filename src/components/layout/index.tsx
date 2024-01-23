@@ -1,12 +1,14 @@
-import { ThemedLayoutV2 } from "@refinedev/antd"
+import { ThemedLayoutV2, ThemedTitleV2 } from "@refinedev/antd"
+import Header from "./header"
 
-const Layout = () => {
+const Layout = ({children}: React.PropsWithChildren) => {
   return (
     <ThemedLayoutV2
-        Header={Header}
+      Header={Header}
+      Title={(titleProps) => <ThemedTitleV2 {...titleProps} text="Refine" />}
     >
-        index
-        </ThemedLayoutV2>
+        {children}
+    </ThemedLayoutV2>
   )
 }
 
