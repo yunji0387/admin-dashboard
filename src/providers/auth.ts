@@ -1,6 +1,6 @@
 import { AuthBindings } from "@refinedev/core";
 
-// import { User } from "@/graphql/schema.types";
+import { User } from "@/graphql/schema.types";
 
 import { API_URL, dataProvider } from "./data";
 
